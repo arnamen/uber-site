@@ -1,0 +1,71 @@
+.mobile
+    min-height: 864px
+    background: url('/img/mobile/bg.png') center center/cover no-repeat
+    padding: 48px 0 80px 0
+    &__subtitle
+        text-align: center
+        margin-top: 19px
+    &__item
+        position: relative
+        margin: 0 30px
+        margin-top: 19px
+        width: 320px
+        height: 280px
+        &:nth-child(-n+3)
+            margin-top: 32px
+        &:nth-child(1)
+            background: url(/img/mobile/sub-bg/1.png) center center/cover no-repeat
+        &:nth-child(2)
+            background: url(/img/mobile/sub-bg/2.png) center center/cover no-repeat
+        &:nth-child(3)
+            background: url(/img/mobile/sub-bg/3.png) center center/cover no-repeat
+        &:nth-child(4)
+            background: url(/img/mobile/sub-bg/4.png) center center/cover no-repeat
+        &:nth-child(5)
+            background: url(/img/mobile/sub-bg/5.png) center center/cover no-repeat
+        &:nth-child(6)
+            background: url(/img/mobile/sub-bg/6.png) center center/cover no-repeat
+        &:hover
+            text-decoration: none
+        &:hover .mobile__cross-btn
+            transform: rotate(180deg)
+    &__descr
+        color: #ffffff
+        font-size: 24px
+        font-weight: 400
+        text-transform: uppercase
+        margin-top: 91px
+        text-align: center
+    &__cross-btn
+        position: absolute
+        width: 26px
+        height: 26px
+        background-color: #000000
+        bottom: 35px
+        left: calc( 50% -  13px)
+        transform-origin: 50% 50%
+        // transform: translateX(-50%)
+        border-radius: 50%
+        transition: 0.6s all
+        &::before
+            content: ''
+            position: absolute
+            display: block
+            width: 14px
+            height: 2px
+            background-color: #1eacc7
+            top: 50%
+            transform: translateY(-50%)
+            left: 6px
+        &::after
+            content: ''
+            position: absolute
+            display: block
+            height: 14px
+            width: 2px
+            background-color: #1eacc7
+            left: 50%
+            transform: translateX(-50%)
+            top: 6px
+
+        
