@@ -13,25 +13,31 @@
 </head>
 <body>
 
-<!--     <div class="burger">
-        <div class="menu__link"><a href="#" class="">Главная</a></div>
-        <div class="menu__link"><a href="#" class="">Со своим автомобилем</a></div>
-        <div class="menu__link"><a href="#" class="">На автомобиле компании</a></div>
-        <div class="menu__link"><a href="#" class="">Требования</a></div>
-        <div class="menu__link"><a href="#" class="">Контакты</a></div>
-        <div class="menu__link"><a href="#" class="">Оставить заявку</a></div>
-    </div> -->
+    <div class="hamburger_menu">
+        <div class="hamburger__link"><a href="#main-page" class="">Главная</a></div>
+        <div class="hamburger__link"><a href="#with-your-auto" class="">Со своим автомобилем</a></div>
+        <div class="hamburger__link"><a href="#company-auto" class="">На автомобиле компании</a></div>
+        <div class="hamburger__link"><a href="#requirements" class="">Требования</a></div>
+        <div class="hamburger__link"><a href="#" class="">Контакты</a></div>
+        <div class="hamburger__link"><a href="#request" class="">Оставить заявку</a></div>
+    </div>
 
-    <div class="menu">
+    <div class="hamburger hamburger_nodisplay">
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+    </div>
+
+    <div id="main-page"  class="menu">
         <div class="menu_fixed-block">
             <div class="container">
-                <div class="menu_wrapper menu_desktop-nodisplay">
-                    <div class="menu__link"><a href="#" class="">Главная</a></div>
-                    <div class="menu__link"><a href="#" class="">Со своим автомобилем</a></div>
-                    <div class="menu__link"><a href="#" class="">На автомобиле компании</a></div>
-                    <div class="menu__link"><a href="#" class="">Требования</a></div>
+                <div class="menu_wrapper menu_nodisplay">
+                    <div class="menu__link"><a href="#main-page" class="">Главная</a></div>
+                    <div class="menu__link"><a href="#with-your-auto" class="">Со своим автомобилем</a></div>
+                    <div class="menu__link"><a href="#company-auto" class="">На автомобиле компании</a></div>
+                    <div class="menu__link"><a href="#requirements" class="">Требования</a></div>
                     <div class="menu__link"><a href="#" class="">Контакты</a></div>
-                    <div class="menu__link"><a href="#" class="">Оставить заявку</a></div>
+                    <div class="menu__link"><a href="#request" class="">Оставить заявку</a></div>
                 </div>
             </div>
         </div>
@@ -53,7 +59,7 @@
             </div>
         </div>
     
-        <div class="first-screen">
+        <div  id="request" class="first-screen">
             <div class="container">
                 <div class="row">
                     <div class="first-screen_wrapper col-md-12 offset-md-0 col-lg-11 offset-lg-1">
@@ -186,7 +192,7 @@
     <section class="requirements">
         <div class="label">возможности</div>
         <div class="title">Условия и требования</div>
-        <div class="container">
+        <div id="with-your-auto" class="container">
             <div class="row">
                 <div class="col-sm-5">
                     <div class="requirements__contents">УСЛОВИЯ: со своим авто:</div>
@@ -201,7 +207,7 @@
                     </ul>
                     <span>В день заработок составляет 7000-12000р + бонус 3000т рублей</span>
                 </div>
-                <div class="col-sm-5 offset-sm-1">
+                <div id="company-auto" class="col-sm-5 offset-sm-1">
                     <div class="requirements__contents">УСЛОВИЯ: на авто компании:</div>
                     <ul>
                         <li class="blue-checkmark">Предоставляем авто без залога</li>
@@ -209,7 +215,7 @@
                         <li class="blue-checkmark">Среда пятница и суббота работа на компанию остальные дни вы работаете на себя</li>
                     </ul>
                 </div>
-                <div class="col-sm-5">
+                <div id="requirements" class="col-sm-5">
                     <div class="requirements__contents requirements__contents_red requirements__contents_mt62px">ТРЕБОВАНИЕ:</div>
                     <ul>
                         <li class="red-checkmark">Наличие автомобиля без рекламы</li>
@@ -231,7 +237,7 @@
                     </ul>
                 </div>
 
-            </div>
+            </divшв>
         </div>
     </section>
 
@@ -274,7 +280,10 @@
         </div>
 
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
