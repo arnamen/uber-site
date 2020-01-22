@@ -90,3 +90,69 @@
             font-size: 11px
             font-weight: 400
             text-transform: uppercase
+    
+@media ( max-width: 1023px)
+    .footer
+        &_wrapper
+            flex-direction: column
+            justify-content: center
+        &__social
+            justify-content: center
+            margin-left: 0
+            width: 100%
+        &__links
+            margin-left: 0
+            justify-content: center
+            &-1
+                justify-content: center
+                a
+                    margin: 0 6px
+                    margin-top: 15px
+            &-2
+                justify-content: center
+                a
+                    margin: 0 4px
+                    margin-top: 5px
+        &__mobile
+            margin-top: 10px
+            justify-content: center
+        
+@media ( max-width: 425px)
+    .footer
+        padding: 25px 0 20px 0
+        &_wrapper
+            margin-top: 19px
+        &__links
+            order: 1
+            &-1
+                font-size: 14px
+                justify-content: space-around
+                min-width: auto
+            &-2
+                font-size: 11px
+                flex-wrap: wrap
+                justify-content: space-between
+                // text-align: center
+                margin: 0 38px
+                min-width: auto
+                a
+                    margin: 0
+                    display: block
+                    margin-top: 10px
+                    &:nth-child(-n+2)
+                        display: block
+                        width: 50%
+                    &:nth-child(2)
+                        text-align: right
+                        
+                        
+        &__social
+            margin-top: 20px
+            order: 2
+        &__mobile
+            margin-top: 20px
+            order: 3
+        &__language
+            margin-top: 12px
+    
+    

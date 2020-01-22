@@ -3,6 +3,7 @@
     &__item
         display: flex
         margin-top: 35px
+        flex-wrap: wrap
         &:nth-child(-n+2)
             margin-top: 40px
     &__icon
@@ -23,4 +24,22 @@
             color: #1eacc7
             font-size: 17px
             font-weight: 400
+    
+@media (max-width: 1025px)
+    .reasons
+        &__item
+            justify-content: center
+        &__descr
+            font-size: 17px
+            align-items: flex-start
+
+@media ( max-width: 425px)
+    .reasons
+        padding: 22px 0 46px 0
+        &__item
+            margin-top: 27px
+            &:first-child
+                margin-top: 28px
+        &__descr
+            margin-top: 27px
     
